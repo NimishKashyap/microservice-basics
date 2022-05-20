@@ -25,7 +25,7 @@ app.post("/events", (req, res) => {
     .post("http://query-srv:4002/events", event)
     .catch((err) => console.log(err));
   axios
-    .post("http://moderation:4003/events", event)
+    .post("http://moderation-srv:4003/events", event)
     .catch((err) => console.log(err));
 
   res.send({ status: "OK" });
