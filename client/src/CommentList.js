@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 
 function CommentList({ comments }) {
   const renderedComments = comments.map((comment) => {
